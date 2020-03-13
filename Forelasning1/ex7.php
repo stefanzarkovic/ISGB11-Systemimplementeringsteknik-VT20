@@ -16,9 +16,10 @@
 				print_r( $_GET );
 				echo( "</pre>" );
 			?>
-
-			<a href="<?php echo( $_SERVER["PHP_SELF"] ); ?>?linkSend=true&linkTest=Alltid med...">Send</a>
-			<a href="<?php echo( $_SERVER["PHP_SELF"] ); ?>?linkDemo=true&linkTest=alltid med...">Demonstraion</a>
+			
+			<?php echo( $_SERVER["PHP_SELF"] ); ?>
+			<a href="ex7.php?linkSend=true&linkTest=Alltid med...">Send</a>
+			<a href="ex7.php?linkDemo=true&linkTest=alltid med...">Demonstraion</a>
 		
 			<?php
 				//Här kommer koden...

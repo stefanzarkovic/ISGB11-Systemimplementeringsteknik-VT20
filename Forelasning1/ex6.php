@@ -12,16 +12,19 @@
 				print_r( $_POST );
 				echo( "</pre>" );
 			?>	
+			<?php echo( $_SERVER["PHP_SELF"] ); ?>
 
-			<form action="<?php echo( $_SERVER["PHP_SELF"] ); ?>" method="post"> 
+			<form action="ex6.php" method="post"> 
 				<input type="submit" name="btnSend" value="Send" />
 				<input type="submit" name="btnDemo" value="Demonstration" />
 				<input type="hidden" name="hidDemo" value="Alltid med..." />
 			</form>
 			<!-- Under föreläsning 2 kommer mer om attributen action och method -->
+
+			
 			<?php
 				//Här kommer koden!
-
+	
 				//Inkluderar extern klass som finns i underkatalogen include
 				include("include/OneDice.php");
 
